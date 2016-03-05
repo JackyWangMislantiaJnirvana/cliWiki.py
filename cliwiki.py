@@ -21,10 +21,13 @@ Format = "&format=json"
 titles="&titles="
 
 
-
+def welcome_message():
+    print('************************************************************************************')
+    print("Welcome to CLI Wikipedia, \nA tool that made to access Wikipedia from command line")
+    print('************************************************************************************')
 
 def get_title():
-    title = raw_input('enter the title you want to search\n')
+    title = raw_input('enter the title you want to search:\n')
     title = title.replace(' ','_')
     global titles
     titles = titles + title
@@ -164,6 +167,7 @@ def featured_feed():
 
 
 if len(sys.argv) < 2:
+    welcome_message()
     get_title()
     wiki_search()
     url_and_displaytitle()
