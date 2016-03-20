@@ -22,9 +22,8 @@ titles="&titles="
 
 
 def welcome_message():
-    print('************************************************************************************')
-    print("Welcome to CLI Wikipedia, \nA tool that made to access Wikipedia from command line")
-    print('************************************************************************************')
+    print("Commond Line Wikipedia")
+
 
 def get_title():
     title = raw_input('enter the title you want to search:\n')
